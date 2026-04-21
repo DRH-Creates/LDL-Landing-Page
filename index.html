@@ -48,19 +48,19 @@
     <header id="top" class="page-header">
         <span class="nav-logo">LDL</span>
         <input type="checkbox" id="ham-toggle" class="ham-checkbox">
-        <label for="ham-toggle" class="ham-btn">
+        <label for="ham-toggle" class="ham-btn" aria-label="Toggle navigation menu">
             <span></span>
             <span></span>
             <span></span>
         </label>
-        <nav class="main-nav">
+        <nav class="main-nav" aria-label="main navigation">
             <a href="#winners" class="nav-link">Winners</a>
             <a href="#about" class="nav-link">About</a>
             <a href="#news" class="nav-link">News</a>
         </nav>
     </header>
     <main>
-        <section id="hero" class="hero-section">
+        <section id="hero" class="hero-section" role="banner">
             <!-- Background Img -->
             <div class="hero-image-wrapper" aria-hidden="true">
                 <img src="assets/images/e36-drifting.webp" alt="Bmw e36 Drifting around a track" class="hero-image"
@@ -73,7 +73,7 @@
         <div id="winners" class="grid-container">
             <article class="photo-one">
                 <img src="assets/images/s15-drifiting.webp" alt="Nissan Silvia S15 Drifting a corner" loading="lazy">
-                <div class="card-content" role="region">
+                <div class="card-content">
                     <h2><i class="fa-solid fa-trophy" aria-hidden="true"></i>1st Place</h2>
                     <p>Valentines Drift Championship</p>
                 </div>
@@ -81,63 +81,64 @@
             <article class="photo-two">
                 <img src="assets/images/drifting-nissan.webp" alt="Black Nissan Drifting a corner during a competition"
                     loading="lazy">
-                <div class="card-content" role="region">
+                <div class="card-content">
                     <h2><i class="fa-solid fa-trophy" aria-hidden="true"></i>2nd Place</h2>
                     <p>Valentines Drift Championship</p>
                 </div>
             </article>
             <article class="photo-three">
                 <img src="assets/images/e36-donut.webp" alt="BMW doing a donut." loading="lazy">
-                <div class="card-content" role="region">
+                <div class="card-content">
                     <h2><i class="fa-solid fa-trophy" aria-hidden="true"></i>3rd Place</h2>
                     <p>Valentines Drift Championship</p>
                 </div>
             </article>
             <article class="photo-four">
                 <img src="assets/images/front-facing-drift.webp" alt="Nissan Silvia entering a corner." loading="lazy">
-                <div class="card-content" role="region">
+                <div class="card-content">
                     <h2><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i>4th Place</h2>
                     <p>Valentines Drift Championship</p>
                 </div>
             </article>
         </div>
-        <div id="about" class="about-section">
-            <h2 class="about-heading">Stay Up to Date on<br>All the latest News</h2>
+        <div id="about" class="about-section" aria-labelledby="about-heading">
+            <h2 id="about-heading" class="about-heading">Stay Up to Date on<br>All the latest News</h2>
             <p class="about-description">Weekly Updates for everything from practice to the next big event.</p>
             <div class="section-link-wrap">
                 <a href="#" class="section-link" role="button">Join the LDL community</a>
             </div>
         </div>
-        <div id="news" class="news-section">
+        <div id="news" class="news-section" aria-labelledby="news-heading">
+            <h2 id="news-heading" class="news-heading">Latest News</h2>
             <div class="articles-grid">
                 <article class="article-card article-small">
                     <header class="article-card-header">
                         <a href="#"><img src="assets/images/trophies.webp" alt="Trophies on a shelf"
                                 class="article-image" loading="lazy"></a>
                     </header>
-                    <div class="article-body" role="region">
+                    <div class="article-body">
                         <h3 class="article-title"><a href="#">Valentine's Drift Championship</a></h3>
                         <!-- article text made with ai -->
                         <p class="article-text">Valentine’s Drift Championship Wraps Up with Intense Battles</p>
                     </div>
-                    <footer class="article-card-footer" role="contentinfo">
+                    <footer class="article-card-footer">
                         <span class="article-meta"><i class="fa-solid fa-user" aria-hidden="true"></i>Jane
                             Doe</span>
                         <span class="article-meta"><i class="fa-solid fa-calendar" aria-hidden="true"></i>Jan
                             2026</span>
                     </footer>
                 </article>
-                <article class="article-card article-small" role="region">
+                <article class="article-card article-small">
                     <header class="article-card-header">
                         <a href="#"><img src="assets/images/coming-soon.webp" alt="Black and White coming soon sign"
                                 class="article-image" loading="lazy"></a>
                     </header>
-                    <div class="article-body" role="region">
+                    <div class="article-body">
                         <h3 class="article-title"><a href="#">Upcoming Events</a></h3>
                         <!-- article text made with ai -->
                         <p class="article-text">Spring Break Drift Bash Announced as Next Major Event</p>
                     </div>
-                    <footer class="article-card-footer" role="contentinfo">
+                    <footer class="article-card-footer">
                         <span class="article-meta"><i class="fa-solid fa-user" aria-hidden="true"></i>John
                             Doe</span>
                         <span class="article-meta"><i class="fa-solid fa-calendar" aria-hidden="true"></i>Jan
@@ -159,7 +160,7 @@
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Company</p>
-                <nav class="footer-nav">
+                <nav class="footer-nav" aria-label="Company Links">
                     <a href="#winners" class="nav-link">Winners</a>
                     <a href="#about" class="nav-link">About</a>
                     <a href="#news" class="nav-link">News</a>
@@ -167,18 +168,18 @@
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Follow Us</p>
-                <div class="footer-social">
-                    <a href="#" class="social-link"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
-                    <a href="#" class="social-link"><i class="fa-brands fa-snapchat" aria-hidden="true"></i></a>
-                    <a href="#" class="social-link"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
-                    <a href="#" class="social-link"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                <div class="footer-social" aria-label="Social Media Links">
+                    <a href="#" class="social-link" aria-label="Follow us on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" class="social-link" aria-label="Follow us on Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                    <a href="#" class="social-link" aria-label="Follow us on Snapchat"><i class="fa-brands fa-snapchat" aria-hidden="true"></i></a>
+                    <a href="#" class="social-link" aria-label="Follow us on TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+                    <a href="#" class="social-link" aria-label="Follow us on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
             <p class="footer-copy">&copy; 2026 Dakota Harmon. All rights reserved.</p>
-            <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+            <a href="#" class="back-to-top" title="Back to Top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
         </div>
     </footer>
 </body>
